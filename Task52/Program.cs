@@ -36,7 +36,7 @@ double [] AverFromColums (double [,] matrix)
         double sum = 0;
         for(int i = 0; i < matrix.GetLength(0); i++)
         {
-            sum += matrix[i,j];
+            sum += Math.Abs(matrix[i,j]);
         }
         array[k] = Math.Round(sum / matrix.GetLength(1), 2);
         k+=1;
